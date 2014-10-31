@@ -1,9 +1,7 @@
-!.gitkeep
-node_modules/
-dist/
-.sass-cache
-bower_components/
+node_modules
+dist
 .tmp
-.DS_Store
+.sass-cache
+bower_components
 .idea/
 *.log
