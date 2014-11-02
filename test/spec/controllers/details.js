@@ -5,13 +5,13 @@ describe('Controller: MainCtrl', function () {
     // load the controller's module
     beforeEach(module('xconfScheduleApp'));
 
-    var MainCtrl,
+    var DetailCtrl,
         scope;
 
     // Initialize the controller and a mock scope
     beforeEach(inject(function ($controller, $rootScope) {
         scope = $rootScope.$new();
-        MainCtrl = $controller('MainController', {
+        DetailCtrl = $controller('DetailsController', {
             $scope: scope
         });
     }));

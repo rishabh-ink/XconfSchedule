@@ -2,23 +2,25 @@
     <h1>'Allo, 'Allo!</h1>
     <p class="lead">
         <img src="images/logoxconf.png" alt="I'm xconf">
-        <br>Always a pleasure scaffolding your apps.
+        <br>Waiting to see you at Xconf 2014.
     </p>
     <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a>
     </p>
 </div>
 
-<div class="row marketing">
-    <h4>HTML5 Boilerplate</h4>
-    <p>
-        HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-    </p>
+<label>search for talk:</label>
+<input ng-model="query" placeholder="Search for talks" autofocus>
 
-    <h4>Angular</h4>
-    <p>
-        AngularJS is a toolset for building the framework most suited to your application development.
-    </p>
-
-    <h4>Karma</h4>
-    <p>Spectacular Test Runner for JavaScript.</p>
+<div class="" ng-controller="MainController">
+    <ul class="">
+        <li class="" ng-repeat="item in talks | filter: query">
+            <a href="#/details/{{talks.indexOf(item)}}">
+                <!--                <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">-->
+                <div class="">
+                    <h2>{{item.name}}</h2>
+                    <h3>{{item.speaker}}</h3>
+                </div>
+            </a>
+        </li>
+    </ul>
 </div>

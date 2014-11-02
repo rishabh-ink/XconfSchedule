@@ -2,13 +2,14 @@
 
 /**
  * @ngdoc function
- * @name xconfScheduleApp.controller:MainCtrl
+ * @name xconfScheduleApp.controller:DetailsController
  * @description
- * # MainCtrl
+ * # DetailsController
  * Controller of the xconfScheduleApp
  */
 angular.module('xconfScheduleApp')
-    .controller('MainController', function ($scope) {
+    .controller('DetailsController', function ($scope, $routeParams) {
+
         $scope.talks = [
             {
                 name: 'Talk1',
@@ -60,5 +61,16 @@ angular.module('xconfScheduleApp')
                 slotNo: 31
     }
 ];
+        $scope.whichItem = $routeParams.talkid;
+        if ($routeParams.talkid > 0) {
+            $scope.prevItem = Number($routeParams.talkid) - 1;
+        } else {
+            $scope.prevItem = $scope.talks.length - 1;
+        }
 
+        if ($routeParams.talkid < $scope.talks.length - 1) {
+            $scope.nextItem = Number($routeParams.talkid) + 1;
+        } else {
+            $scope.nextItem = 0;
+        }
     });
