@@ -6,7 +6,7 @@
 </div>
 
 <label>search for talk:</label>
-<input ng-model="query" placeholder="Search for talks" autofocus>
+<input ng-model="query" placeholder="Search Talk, Speaker, or Track" autofocus>
 
 <form name="myForm">
     <input type="radio" ng-model="track" name="track" value="First">Track1
@@ -18,11 +18,11 @@
     <ul class="">
         <li class="" ng-repeat="item in talks | filter: track | filter: query | orderBy: predicate">
 
-            <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
             <div class="">
                 <a href="#/details/{{talks.indexOf(item)}}">
                     <h2>{{item.name}}</h2>
                 </a>
+                <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
                 <p>Speaker: {{item.speaker}}
                     <br/>Track Number: {{item.trackNo}}
                     <br/>Slot No: {{item.slotNo}}
