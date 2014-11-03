@@ -1,10 +1,7 @@
 <div class="jumbotron">
-    <h1>'Allo, 'Allo!</h1>
+    <h1>Welcome to Xconf 2014 Bangalore</h1>
     <p class="lead">
         <img src="images/logoxconf.png" alt="I'm xconf">
-        <br>Waiting to see you at Xconf 2014.
-    </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a>
     </p>
 </div>
 
@@ -12,21 +9,25 @@
 <input ng-model="query" placeholder="Search for talks" autofocus>
 
 <form name="myForm">
-    <input type="radio" ng-model="track" name="track" value="10" checked>Track1
-    <input type="radio" ng-model="track" name="track" value="20">Track2
-    <input type="radio" ng-model="track" name="track" value="30">Track3
+    <input type="radio" ng-model="track" name="track" value="First">Track1
+    <input type="radio" ng-model="track" name="track" value="Second">Track2
+    <input type="radio" ng-model="track" name="track" value="Third">Track3
 </form>
 
 <div class="" ng-controller="MainController">
     <ul class="">
-        <li class="" ng-repeat="item in talks | filter: track | orderBy: slot">
-            <a href="#/details/{{talks.indexOf(item)}}">
-                <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
-                <div class="">
+        <li class="" ng-repeat="item in talks | filter: track | filter: query | orderBy: predicate">
+
+            <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
+            <div class="">
+                <a href="#/details/{{talks.indexOf(item)}}">
                     <h2>{{item.name}}</h2>
-                    <h3>{{item.speaker}}</h3>
-                </div>
-            </a>
+                </a>
+                <p>Speaker: {{item.speaker}}
+                    <br/>Track Number: {{item.trackNo}}
+                    <br/>Slot No: {{item.slotNo}}
+                </p>
+            </div>
         </li>
     </ul>
 </div>

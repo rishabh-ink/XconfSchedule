@@ -16,8 +16,8 @@ angular.module('xconfScheduleApp')
                 length: '45min',
                 speaker: 'twerker1',
                 nickname: 'tk1',
-                slotNo: 1,
-                trackNo: 30
+                slotNo: 4,
+                trackNo: 'Third'
     },
             {
                 name: 'Talk2',
@@ -25,15 +25,15 @@ angular.module('xconfScheduleApp')
                 speaker: 'twerker2',
                 nickname: 'tk1',
                 slotNo: 1,
-                trackNo: 20
+                trackNo: 'Second'
     },
             {
                 name: 'Talk3',
                 length: '10min',
                 speaker: 'twerker3',
                 nickname: 'tk1',
-                slotNo: 1,
-                trackNo: 10
+                slotNo: 3,
+                trackNo: 'First'
     },
             {
                 name: 'Talk4',
@@ -41,7 +41,7 @@ angular.module('xconfScheduleApp')
                 speaker: 'twerker4',
                 nickname: 'tk1',
                 slotNo: 2,
-                trackNo: 10
+                trackNo: 'First'
     },
             {
                 name: 'Talk5',
@@ -49,7 +49,7 @@ angular.module('xconfScheduleApp')
                 speaker: 'twerker5',
                 nickname: 'tk1',
                 slotNo: 2,
-                trackNo: 20
+                trackNo: 'Second'
     },
             {
                 name: 'Talk6',
@@ -57,15 +57,15 @@ angular.module('xconfScheduleApp')
                 speaker: 'twerker6',
                 nickname: 'tk1',
                 slotNo: 2,
-                trackNo: 30
+                trackNo: 'Third'
     },
             {
                 name: 'Talk7',
-                length: '45min',
+                length: '30min',
                 speaker: 'twerker7',
                 nickname: 'tk1',
-                slotNo: 4,
-                trackNo: 10
+                slotNo: 1,
+                trackNo: 'First'
     }
 ];
         $scope.whichItem = $routeParams.talkid;
