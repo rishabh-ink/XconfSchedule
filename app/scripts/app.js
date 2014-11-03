@@ -10,6 +10,7 @@
  */
 angular
     .module('xconfScheduleApp', [
+    'ngMaterial',
     'ngAnimate',
     'ngCookies',
     'ngResource',
