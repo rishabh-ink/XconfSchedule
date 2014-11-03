@@ -11,11 +11,17 @@
 <label>search for talk:</label>
 <input ng-model="query" placeholder="Search for talks" autofocus>
 
+<form name="myForm">
+    <input type="radio" ng-model="track" name="track" value="10" checked>Track1
+    <input type="radio" ng-model="track" name="track" value="20">Track2
+    <input type="radio" ng-model="track" name="track" value="30">Track3
+</form>
+
 <div class="" ng-controller="MainController">
     <ul class="">
-        <li class="" ng-repeat="item in talks | filter: query">
+        <li class="" ng-repeat="item in talks | filter: track | orderBy: slot">
             <a href="#/details/{{talks.indexOf(item)}}">
-                <!--                <img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">-->
+                <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
                 <div class="">
                     <h2>{{item.name}}</h2>
                     <h3>{{item.speaker}}</h3>
