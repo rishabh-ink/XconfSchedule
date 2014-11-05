@@ -32,9 +32,9 @@ angular
                 templateUrl: 'views/details.html',
                 controller: 'DetailsController'
             })
-            .when('/datafeeder', {
-                templateUrl: 'views/datafeeder.html',
-                controller: 'FeederController'
+            .when('/tweets', {
+                templateUrl: 'views/tweets.html',
+                controller: 'TwitterController'
             })
             .otherwise({
                 redirectTo: '/'
