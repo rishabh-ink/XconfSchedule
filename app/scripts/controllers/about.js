@@ -8,6 +8,6 @@
  * Controller of the xconfScheduleApp
  */
 angular.module('xconfScheduleApp')
-    .controller('AboutCtrl', function ($scope) {
+    .controller('AboutCtrl', function () {
 
     });
