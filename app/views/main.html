@@ -8,11 +8,11 @@
 <label>search for talk:</label>
 <input ng-model="query" placeholder="Search Talk, Speaker, or Track" autofocus>
 
-<form name="myForm">
-    <input type="radio" ng-model="track" name="track" value="First">Track1
-    <input type="radio" ng-model="track" name="track" value="Second">Track2
-    <input type="radio" ng-model="track" name="track" value="Third">Track3
-</form>
+<md-radio-group ng-model="track">
+    <md-radio-button value="First" noink>Firste Track</md-radio-button>
+    <md-radio-button value="Second" aria-label="Label 2" >Second Track</md-radio-button>
+    <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
+</md-radio-group>
 
 <div class="" ng-controller="MainController">
     <ul class="">
