@@ -5,12 +5,13 @@
     </p>
 </div>
 
-<label>search for talk:</label>
-<input ng-model="query" placeholder="Search Talk, Speaker, or Track" autofocus>
+<div class="row" md-theme="teal">
+    <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
+</div>
 
 <md-radio-group ng-model="track">
-    <md-radio-button value="First" noink>Firste Track</md-radio-button>
-    <md-radio-button value="Second" aria-label="Label 2" >Second Track</md-radio-button>
+    <md-radio-button value="First" noink>First Track</md-radio-button>
+    <md-radio-button value="Second" aria-label="Label 2">Second Track</md-radio-button>
     <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
 </md-radio-group>
 
@@ -18,16 +19,19 @@
     <ul class="">
         <li class="" ng-repeat="item in talks | filter: track | filter: query | orderBy: predicate">
 
-            <div class="">
-                <a href="#/details/{{talks.indexOf(item)}}">
+           <md-card>
+            <a href="#/details/{{talks.indexOf(item)}}">
                     <h2>{{item.name}}</h2>
                 </a>
-                <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
+             <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
+            <h2>Paracosm</h2>
+            <p> The journey from being a coder to programmer
+            </p>
                 <p>Speaker: {{item.speaker}}
                     <br/>Track Number: {{item.trackNo}}
                     <br/>Slot No: {{item.slotNo}}
                 </p>
-            </div>
+        </md-card>
         </li>
     </ul>
 </div>

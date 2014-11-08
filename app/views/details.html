@@ -2,13 +2,16 @@
     <div class="talk cf" ng-model="talks">
         <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
         <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
-        <h1>{{talks[whichItem].name}}</h1>
-        <div class="info">
-            <h3>{{talks[whichItem].length}}</h3>
-            <img ng-src="images/{{talks[whichItem].nickname}}_pic.png" alt="Photo of {{talks[whichItem].name}}">
-            <div class="bio">{{talks[whichItem].speaker}}</div>
-            <div class="slot">{{talks[whichItem].slotNo}}</div>
-        </div>
+
+        <img ng-src="images/{{talks[whichItem].nickname}}_pic.png" alt="Photo of {{talks[whichItem].name}}">
+        <div class="bio">{{talks[whichItem].speaker}}</div>
+        <h3>{{talks[whichItem].name}}</h3>
+        <h4>Paracosm</h4>
+        <p>
+            The titles of Washed Out's breakthrough song...
+        </p>
+        <h3>{{talks[whichItem].length}}</h3>
+        <div class="slot">Track: {{talks[whichItem].trackNo}}</div>
     </div>
     <a href="index.html">&laquo; Back to Main Page</a>
 </div>

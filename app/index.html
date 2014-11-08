@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="../bower_components/angular-material/angular-material.css">
-    <link rel="stylesheet" href="../bower_components/angular-material/themes/default-theme.css">
+    <link rel="stylesheet" href="../bower_components/angular-material/themes/teal-theme.css">
     <!-- endbuild -->
 </head>
 
@@ -29,6 +29,7 @@
   <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
     <div ng-view=""></div>
   </div>
+</div>
   <div class="footer">
             <p><span class="glyphicon glyphicon-heart"></span>from ThoughtWorks Bengaluru</p>
   </div>
@@ -61,7 +62,7 @@
         var state = document.readyState
             if (state == 'complete') {
                 skrollr.init({
-                    smoothScrolling: true,
+                    smoothScrolling: true
                 });
             }
     }

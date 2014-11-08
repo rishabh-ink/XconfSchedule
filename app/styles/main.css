@@ -93,5 +93,10 @@ body {
 }
 
 .talkinfo {
-    padding-top: 10px;
+    padding-top: 20px;
+}
+
+.row {
+    position: absolute;
+    right: 30px;
 }
