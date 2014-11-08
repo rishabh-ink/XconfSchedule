@@ -22,7 +22,7 @@ body {
 #toolbar {
   display: block;
   position: fixed;
-  box-shadow:1px 1px 5px #333333;
+/*  box-shadow:1px 1px 5px #333333;*/
   width: 100%;
   z-index: 10;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ body {
   padding: 21px;
   position: absolute;
   bottom: 0;
-  color: #fff;
+  color: #F9F9F9;;
 }
 
 /* Custom page footer */
@@ -58,6 +58,9 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
+  margin-top: 0px;
+  width: 100%;
+  height: 8oopx;
   border-bottom: 1px solid #e5e5e5;
 }
 .jumbotron .btn {
@@ -99,4 +102,42 @@ body {
 .row {
     position: absolute;
     right: 30px;
+}
+md-card{
+    width: 80%;
+}
+
+md-item-content{
+    padding-left: 40px;
+}
+
+.schedule {
+    width: 75%;
+    padding-left: 30px;
+    float: left;
+}
+
+.right-sidebar {
+  top: 260px;
+  position: absolute;
+  right: 30px;
+  width: 280px;
+  height: 300px;
+  padding-top: 30px;
+}
+
+.filters {
+  position: relative;
+  top: 90px;
+  left: 20px;
+}
+
+.style {
+     background-color: #F9F9F9;
+}
+
+.hamburger{
+  position: relative;
+  top: 21px;
+  left: 22px;
 }

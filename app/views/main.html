@@ -1,37 +1,50 @@
-<div class="jumbotron">
-    <h1>Welcome to Xconf 2014 Bangalore</h1>
-    <p class="lead">
-        <img src="images/logoxconf.png" alt="I'm xconf">
-    </p>
-</div>
+<div class="style">
 
-<div class="row" md-theme="teal">
-    <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
-</div>
+  <div class="right-sidebar">
+    <div class="row" md-theme="teal">
+      <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
+    </div>
 
-<md-radio-group ng-model="track">
-    <md-radio-button value="First" noink>First Track</md-radio-button>
-    <md-radio-button value="Second" aria-label="Label 2">Second Track</md-radio-button>
-    <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
-</md-radio-group>
+    <md-radio-group ng-model="track" class="filters">
+      <md-radio-button value="" aria-label="Label 0">All Tracks</md-radio-button>
+      <md-radio-button value="First" aria-label="Label 1">First Track</md-radio-button>
+      <md-radio-button value="Second" aria-label="Label 2">Second Track</md-radio-button>
+      <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
+    </md-radio-group>
+  </div>
 
-<div class="" ng-controller="MainController">
-    <ul class="">
-        <li class="" ng-repeat="item in talks | filter: track | filter: query | orderBy: predicate">
+  <div class="" ng-controller="MainController">
+    <md-toolbar md-theme="teal">
+      <h1 class="md-toolbar-tools">
+        <span style="padding-left: 10px;">Schedule for Xconf 22.11.14</span>
+      </h1>
+    </md-toolbar>
 
-           <md-card>
-            <a href="#/details/{{talks.indexOf(item)}}">
-                    <h2>{{item.name}}</h2>
+    <div class="schedule">
+      <md-content>
+        <md-list>
+          <md-item ng-repeat="item in talks | filter: track | filter: query | orderBy: predicate">
+            <md-item-content>
+              <div class="md-tile-content">
+                <a href="#/details/{{talks.indexOf(item)}}">
+                  <h2>{{item.name}}</h2>
                 </a>
-             <img ng-src="images/{{item.nickname}}_pic.png" alt="Photo of {{item.name}}">
-            <h2>Paracosm</h2>
-            <p> The journey from being a coder to programmer
-            </p>
-                <p>Speaker: {{item.speaker}}
-                    <br/>Track Number: {{item.trackNo}}
-                    <br/>Slot No: {{item.slotNo}}
+
+                <h3>Speaker: {{item.speaker}}</h3>
+                <h4>Track Number: {{item.trackNo}}</h4>
+
+                <p>
+                  The journey from being a coder to programmer
                 </p>
-        </md-card>
-        </li>
-    </ul>
+              </div>
+            </md-item-content>
+
+            <md-divider ng-if="!$last"></md-divider>
+          </md-item>
+        </md-list>
+      </md-content>
+    </div>
+  </div>
+
+
 </div>
