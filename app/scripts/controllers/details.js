@@ -10,20 +10,40 @@
 angular.module('xconfScheduleApp')
     .controller('DetailsController', ['$scope', '$http', '$routeParams',
             function ($scope, $http, $routeParams) {
-            $http.get('data.json').success(function (data) {
+
+            var data = undefined;
+            if (typeof (Storage) !== "undefined") {
+                data = localStorage.getObject('talksxconf');
                 $scope.talks = data;
+            }
 
-                $scope.whichItem = $routeParams.talkid;
-                if ($routeParams.talkid > 0) {
-                    $scope.prevItem = Number($routeParams.talkid) - 1;
-                } else {
-                    $scope.prevItem = $scope.talks.length - 1;
-                }
+            if (!data) {
+                $http.get('data.json').success(function (data) {
+                    $scope.talks = data;
+                    localStorage.setObject('talksxconf', data);
+                }).error(function(data, status, headers, config) {
+                    $scope.toastIt('Not able to fetch Details.');
+                    });;
+            }
 
-                if ($routeParams.talkid < $scope.talks.length - 1) {
-                    $scope.nextItem = Number($routeParams.talkid) + 1;
-                } else {
-                    $scope.nextItem = 0;
-                }
-            });
+            $scope.whichItem = $routeParams.talkid;
+            if ($routeParams.talkid > 0) {
+                $scope.prevItem = Number($routeParams.talkid) - 1;
+            } else {
+                $scope.prevItem = $scope.talks.length - 1;
+            }
+
+            if ($routeParams.talkid < $scope.talks.length - 1) {
+                $scope.nextItem = Number($routeParams.talkid) + 1;
+            } else {
+                $scope.nextItem = 0;
+            }
+
+            $scope.toastIt = function (message) {
+                $mdToast.show({
+                    template: '<md-toast>Sorry, ' + message + '</md-toast>',
+                    hideDelay: 2000,
+                    position: "top right"
+                });
+            };
     }]);

@@ -10,8 +10,27 @@
 angular.module('xconfScheduleApp')
     .controller('MainController', ['$scope', '$http',
         function ($scope, $http) {
-            $http.get('data.json').success(function (data) {
+            $scope.predicate = 'slotNo';
+            var data = undefined;
+            if (typeof (Storage) !== "undefined") {
+                data = localStorage.getObject('talksxconf');
                 $scope.talks = data;
-                $scope.predicate = 'slotNo';
-            });
+            }
+
+            if(!data){
+                $http.get('data.json').success(function (data) {
+                    $scope.talks = data;
+                    localStorage.setObject('talksxconf', data);
+                }).error(function(data, status, headers, config) {
+                        $scope.toastIt('Not able to fetch schedules.');
+                });;
+            }
+
+            $scope.toastIt = function (message) {
+                $mdToast.show({
+                    template: '<md-toast>Sorry, ' + message + '</md-toast>',
+                    hideDelay: 2000,
+                    position: "top right"
+                });
+            };
     }]);

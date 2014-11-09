@@ -5,7 +5,8 @@
         "speaker": "twerker1",
         "nickname": "tk1",
         "slotNo": 4,
-        "trackNo": "Third"
+        "trackNo": "Third",
+        "attending": false
     },
     {
         "name": "Talk2",
@@ -13,7 +14,8 @@
         "speaker": "twerker2",
         "nickname": "tk1",
         "slotNo": 1,
-        "trackNo": "Second"
+        "trackNo": "Second",
+        "attending": false
     },
     {
         "name": "Talk3",
@@ -21,7 +23,8 @@
         "speaker": "twerker3",
         "nickname": "tk1",
         "slotNo": 3,
-        "trackNo": "First"
+        "trackNo": "First",
+        "attending": false
     },
     {
         "name": "Talk4",
@@ -29,7 +32,8 @@
         "speaker": "twerker4",
         "nickname": "tk1",
         "slotNo": 2,
-        "trackNo": "First"
+        "trackNo": "First",
+        "attending": false
     },
     {
         "name": "Talk5",
@@ -37,7 +41,8 @@
         "speaker": "twerker5",
         "nickname": "tk1",
         "slotNo": 2,
-        "trackNo": "Second"
+        "trackNo": "Second",
+        "attending": false
     },
     {
         "name": "Talk6",
@@ -45,7 +50,8 @@
         "speaker": "twerker6",
         "nickname": "tk1",
         "slotNo": 2,
-        "trackNo": "Third"
+        "trackNo": "Third",
+        "attending": false
     },
     {
         "name": "Talk7",
@@ -53,6 +59,7 @@
         "speaker": "twerker7",
         "nickname": "tk1",
         "slotNo": 1,
-        "trackNo": "First"
+        "trackNo": "First",
+        "attending": false
     }
 ]

@@ -20,20 +20,20 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
- <div id="page">
-  <div id="toolbar" data-0="height:192px" data-128="height: 64px">
-    <img src="images/hamburger.svg" class="hamburger">
-    <div id="title" data-0="font-size: 48px; padding: 0 0 24px 12px;" data-128="font-size: 18px; padding: 0 0 21px 60px;">
-      Xconf2014 Bangalore
+    <div id="page">
+        <div id="toolbar" data-0="height:192px" data-128="height: 64px">
+            <img src="images/hamburger.svg" class="hamburger">
+            <div id="title" data-0="font-size: 48px; padding: 0 0 24px 12px;" data-128="font-size: 18px; padding: 0 0 21px 60px;">
+                Xconf2014 Bangalore
+            </div>
+        </div>
+        <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
+            <div ng-view=""></div>
+        </div>
     </div>
-  </div>
-  <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
-    <div ng-view=""></div>
-  </div>
-</div>
-  <div class="footer">
-            <p><span class=""></span>ThoughtWorks</p>
-  </div>
+    <div class="footer">
+        <p><span class=""></span>ThoughtWorks</p>
+    </div>
 
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>
@@ -53,19 +53,20 @@
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/utils.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/about.js"></script>
     <script src="scripts/controllers/details.js"></script>
     <script src="scripts/controllers/tweets.js"></script>
     <script>
-    document.onreadystatechange = function () {
-        var state = document.readyState
+        document.onreadystatechange = function () {
+            var state = document.readyState
             if (state == 'complete') {
                 skrollr.init({
-                    smoothScrolling: true
+                    smoothScrolling: true,
                 });
             }
-    }
+        }
     </script>
     <!-- endbuild -->
 </body>
