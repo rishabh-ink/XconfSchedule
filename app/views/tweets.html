@@ -1,1 +1,17 @@
-<div tweets hashtag="hashtag" hash="true" button="true" count="5" refresh="10" />
+<div class="style">
+    <div class="tweets">
+        <md-content>
+            <md-list>
+                <md-item ng-repeat="tweet in tweets">
+                    <md-item-content>
+                        <div class="md-tile-content tweet">
+                            <h2>{{item.name}}</h2>
+                            <h3>Speaker: {{item.speaker}}</h3>
+                            <h4>Track Number: {{item.trackNo}}</h4>
+                        </div>
+                    </md-item-content>
+                </md-item>
+            </md-list>
+        </md-content>
+    </div>
+</div>

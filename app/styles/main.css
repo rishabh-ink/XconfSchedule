@@ -1,151 +1,157 @@
 /* Space out content a bit */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .marketing,
 .footer {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
 #page {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
-
 #toolbar {
-  display: block;
-  position: fixed;
-/*  box-shadow:1px 1px 5px #333333;*/
-  width: 100%;
-  z-index: 10;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  background-color: #009688;
-  padding: 0 16px;
+    display: block;
+    position: fixed;
+    /*  box-shadow:1px 1px 5px #333333;*/
+    width: 100%;
+    z-index: 10;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #009688;
+    padding: 0 16px;
 }
-
 #title {
-  padding: 21px;
-  position: absolute;
-  bottom: 0;
-  color: #F9F9F9;;
+    padding: 21px;
+    position: absolute;
+    bottom: 0;
+    color: #F9F9F9;
+    ;
 }
-
 /* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
 /* Customize container */
+
 @media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+    .container {
+        max-width: 730px;
+    }
 }
 .container-narrow > hr {
-  margin: 30px 0;
+    margin: 30px 0;
 }
-
 /* Supporting marketing content */
+
 .marketing {
-  margin: 40px 0;
+    margin: 40px 0;
 }
 .marketing p + h4 {
-  margin-top: 28px;
+    margin-top: 28px;
 }
-
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
-}
 
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
 .talkinfo {
     padding-top: 20px;
 }
-
 .row {
-  position: relative;
-  top: -25px;
+    position: relative;
+    top: -25px;
 }
-
-md-item-content{
+md-item-content {
     padding-left: 40px;
 }
-
-.full{
- height: 100%;
-  min-height: 70px;
+.full {
+    height: 100%;
+    min-height: 70px;
 }
-
 .schedule {
     width: 75%;
     padding-left: 12%;
 }
-
 /*.right-sidebar {*/
-  /*top: 260px;*/
-  /*position: absolute;*/
-  /*right: 30px;*/
-  /*width: 280px;*/
-  /*height: 300px;*/
-  /*padding-top: 30px;*/
+
+/*top: 260px;*/
+
+/*position: absolute;*/
+
+/*right: 30px;*/
+
+/*width: 280px;*/
+
+/*height: 300px;*/
+
+/*padding-top: 30px;*/
+
 /*}*/
 
 .filters {
-  position: relative;
-  top: 0;
-  padding-bottom: 20px;
+    position: relative;
+    top: 0;
+    padding-bottom: 20px;
 }
-
-.hamburger{
-  position: relative;
-  top: 21px;
-  left: 22px;
+.hamburger {
+    position: relative;
+    top: 21px;
+    left: 22px;
 }
-
-.nav{
-  position: fixed;
-  height: 100%;
-  margin-top: 60px;
+.nav {
+    position: fixed;
+    height: 100%;
+    margin-top: 60px;
 }
-
-.headline{
-  font-family: 'Roboto', 'serif';
-  font-size: 20px !important;
-  font-weight: normal;
+.headline {
+    font-family: 'Roboto', 'serif';
+    font-size: 20px !important;
+    font-weight: normal;
 }
-
-.subhead{
-  font-family: 'Roboto', 'serif';
-  font-size: 16px !important;
-  font-weight: normal;
+.subhead {
+    font-family: 'Roboto', 'serif';
+    font-size: 16px !important;
+    font-weight: normal;
 }
-
-.content{
-  font-family: 'Roboto', 'serif';
-  font-size: 14px !important;
-  font-weight: normal;
+.content {
+    font-family: 'Roboto', 'serif';
+    font-size: 14px !important;
+    font-weight: normal;
+}
+.tweet {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+input {
+    outline: none;
+}
+.style {
+    background: #ebebeb;
 }
