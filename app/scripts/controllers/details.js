@@ -9,10 +9,10 @@
  */
 angular.module('xconfScheduleApp')
     .controller('DetailsController', ['$scope', '$http', '$routeParams',
-            function ($scope, $http, $routeParams) {
+            function ($scope, $http, $mdToast, $routeParams) {
 
-            var data = undefined;
-            if (typeof (Storage) !== "undefined") {
+            var data;
+            if (typeof (Storage) !== 'undefined') {
                 data = localStorage.getObject('talksxconf');
                 $scope.talks = data;
             }
@@ -21,9 +21,10 @@ angular.module('xconfScheduleApp')
                 $http.get('data.json').success(function (data) {
                     $scope.talks = data;
                     localStorage.setObject('talksxconf', data);
-                }).error(function(data, status, headers, config) {
+                }).error(function (data, status, headers, config) {
                     $scope.toastIt('Not able to fetch Details.');
-                    });;
+                    console.log(status + headers + config);
+                });
             }
 
             $scope.whichItem = $routeParams.talkid;
@@ -43,7 +44,7 @@ angular.module('xconfScheduleApp')
                 $mdToast.show({
                     template: '<md-toast>Sorry, ' + message + '</md-toast>',
                     hideDelay: 2000,
-                    position: "top right"
+                    position: 'top right'
                 });
             };
     }]);
