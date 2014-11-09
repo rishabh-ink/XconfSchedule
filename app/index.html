@@ -27,40 +27,40 @@
             </md-toolbar>
             <md-content class="md-padding full">
                 <p hide show-md>
-              <div class="right-sidebar">
-                Search your favourite talks:
-                <div class="row" md-theme="teal">
-                  <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
-                </div>
+                    <div class="right-sidebar">
+                        Search your favourite talks:
+                        <div class="row" md-theme="teal">
+                            <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
+                        </div>
 
-                <md-radio-group ng-model="track" class="filters">
-                  Filter the data based on tracks:
-                  <md-radio-button value="" aria-label="Label 0">All Tracks</md-radio-button>
-                  <md-radio-button value="First" aria-label="Label 1">First Track</md-radio-button>
-                  <md-radio-button value="Second" aria-label="Label 2">Second Track</md-radio-button>
-                  <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
-                </md-radio-group>
-              </div>
-              <md-button ng-href="/myschedule" aria-label="schedule">Go to My Schedule</md-button>
+                        <md-radio-group ng-model="track" class="filters">
+                            Filter the data based on tracks:
+                            <md-radio-button value="" aria-label="Label 0">All Tracks</md-radio-button>
+                            <md-radio-button value="First" aria-label="Label 1">First Track</md-radio-button>
+                            <md-radio-button value="Second" aria-label="Label 2">Second Track</md-radio-button>
+                            <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
+                        </md-radio-group>
+                    </div>
+                    <md-button ng-href="/myschedule" aria-label="schedule">Go to My Schedule</md-button>
 
-              </p>
+                </p>
             </md-content>
         </md-sidenav>
 
-            <div id="page">
-                <div id="toolbar" data-0="height:192px" data-128="height: 64px">
-                    <img src="images/hamburger.svg" class="hamburger" ng-click="toggleLeft()">
-                    <div id="title" data-0="font-size: 48px; padding: 0 0 24px 12px;" data-128="font-size: 18px; padding: 0 0 21px 60px;">
-                        Xconf2014 Bangalore
-                    </div>
-                </div>
-                <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
-                    <div ng-view=""></div>
+        <div id="page">
+            <div id="toolbar" data-0="height:192px" data-128="height: 64px">
+                <img src="images/hamburger.svg" class="hamburger" ng-click="toggleLeft()">
+                <div id="title" data-0="font-size: 48px; padding: 0 0 24px 12px;" data-128="font-size: 18px; padding: 0 0 21px 60px;">
+                    Xconf2014 Bangalore
                 </div>
             </div>
-            <div class="footer">
-                <p><span class=""></span>ThoughtWorks</p>
+            <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
+                <div ng-view=""></div>
             </div>
+        </div>
+        <div class="footer">
+            <p><span class=""></span>ThoughtWorks</p>
+        </div>
     </section>
     <!-- bower:js -->
     <script src="../bower_components/angular/angular.js"></script>

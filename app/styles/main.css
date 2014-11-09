@@ -95,8 +95,9 @@ md-item-content {
     min-height: 70px;
 }
 .schedule {
-    width: 75%;
-    padding-left: 12%;
+    width: 100%;
+    padding-left: 18%;
+    padding-right: 20%;
 }
 /*.right-sidebar {*/
 
