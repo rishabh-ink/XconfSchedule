@@ -36,6 +36,10 @@ angular
                 templateUrl: 'views/tweets.html',
                 controller: 'TwitterController'
             })
+          .when('/myschedule', {
+                templateUrl: 'views/myschedule.html',
+                controller: 'MyScdeduleControllor'
+            })
             .otherwise({
                 redirectTo: '/'
             });

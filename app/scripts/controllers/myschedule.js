@@ -2,7 +2,7 @@
 
 /**
  * @ngdoc function
- * @name xconfScheduleApp.controller:MyScdeduleControllor
+ * @name xconfScheduleApp.controller:MyScheduleControllor
  * @description
  * # MyScdeduleControllor
  * Controller of the xconfScheduleApp
