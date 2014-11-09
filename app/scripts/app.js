@@ -40,3 +40,15 @@ angular
                 redirectTo: '/'
             });
     });
+/// Common controllers for the material design
+angular.module('xconfScheduleApp')
+    .controller('LeftCtrl', function ($scope, $timeout, $mdSidenav) {
+        $scope.close = function () {
+            $mdSidenav('left').close();
+        };
+
+        $scope.toggleLeft = function () {
+            $mdSidenav('left').toggle();
+        };
+
+    });
