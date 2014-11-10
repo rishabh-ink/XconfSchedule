@@ -113,22 +113,6 @@ md-item-content {
     padding-left: 18%;
     padding-right: 20%;
 }
-/*.right-sidebar {*/
-
-/*top: 260px;*/
-
-/*position: absolute;*/
-
-/*right: 30px;*/
-
-/*width: 280px;*/
-
-/*height: 300px;*/
-
-/*padding-top: 30px;*/
-
-/*}*/
-
 .filters {
     position: relative;
     top: 0;
@@ -176,7 +160,7 @@ input {
 .fabs {
     position: absolute;
     padding: 10px;
-    top: 160px;
+    top: 153px;
     z-index: 10;
     right: 180px;
 }
