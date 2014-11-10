@@ -173,3 +173,10 @@ input {
 #complement {
     background-color: #34495e;
 }
+.fabs {
+    position: absolute;
+    padding: 10px;
+    top: 160px;
+    z-index: 10;
+    right: 180px;
+}
