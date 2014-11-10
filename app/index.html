@@ -14,7 +14,7 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="xconfScheduleApp">
+<body ng-app="xconfScheduleApp" class="style">
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -22,7 +22,7 @@
     <!-- Add your site or application content here -->
     <section layout="horizontal" flex ng-controller="LeftCtrl">
         <md-sidenav class="md-sidenav-left md-whiteframe-z2 nav" component-id="left">
-            <md-toolbar md-theme="teal">
+            <md-toolbar class="md-default-theme" id="complement">
                 <h1 class="md-toolbar-tools">Navigation Bar</h1>
             </md-toolbar>
             <md-content class="md-padding full">
@@ -41,7 +41,7 @@
                             <md-radio-button value="Third" aria-label="Label 3">Third Track</md-radio-button>
                         </md-radio-group>
                     </div>
-                    <md-button ng-href="/myschedule" aria-label="schedule">Go to My Schedule</md-button>
+                    <md-button ng-href="#/myschedule" aria-label="schedule">Go to My Schedule</md-button>
 
                 </p>
             </md-content>

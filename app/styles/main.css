@@ -1,16 +1,15 @@
 /* The color palette
 
-Base color : #009688
-Complement : #34495e
-Shade      : #1ab385
-Contrast   : #34495e
-Base blue  : #47b1e8
-Dark shade : #0da15f
-Dark blue  : #2a2f3f
-Smooth blue: #2c798f
-Dark green : #0c2228
 Thick green: #1aa286
+Shade      : #1ab385
+Dark shade : #0da15f
 ~base      : #0c5748
+Dark green : #0c2228
+Base color : #009688
+Base blue  : #47b1e8
+Complement : #34495e
+Smooth blue: #2c798f
+Dark blue  : #2a2f3f
 */
 
 /* Space out content a bit */
@@ -170,4 +169,7 @@ input {
 }
 .style {
     background: #ebebeb;
+}
+#complement {
+    background-color: #34495e;
 }
