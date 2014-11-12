@@ -32,11 +32,7 @@ angular
                 templateUrl: 'views/details.html',
                 controller: 'DetailsController'
             })
-            .when('/tweets', {
-                templateUrl: 'views/tweets.html',
-                controller: 'TwitterController'
-            })
-          .when('/myschedule', {
+            .when('/myschedule', {
                 templateUrl: 'views/myschedule.html',
                 controller: 'MyScdeduleControllor'
             })
