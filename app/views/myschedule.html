@@ -1,0 +1,26 @@
+<div class="style">
+    <div ng-controller="MyScheduleController" class="schedule">
+        <md-content>
+            <md-list>
+                <md-item ng-repeat="item in mySchedule | filter: isInMySchedule | orderBy: predicate">
+                    <md-item-content>
+                        <div class="md-tile-content">
+                            <a href="#/details/{{talks.indexOf(item)}}">
+                                <h2>{{item.name}}</h2>
+                            </a>
+
+                            <h3>Speaker: {{item.speaker}}</h3>
+                            <h4>Track Number: {{item.trackNo}}</h4>
+
+                            <p>
+                                The journey from being a coder to programmer
+                            </p>
+                        </div>
+                    </md-item-content>
+
+                    <md-divider ng-if="!$last"></md-divider>
+                </md-item>
+            </md-list>
+        </md-content>
+    </div>
+</div>

@@ -15,7 +15,7 @@
         "nickname": "tk1",
         "slotNo": 1,
         "trackNo": "Second",
-        "attending": false
+        "attending": true
     },
     {
         "name": "Talk3",
@@ -42,7 +42,7 @@
         "nickname": "tk1",
         "slotNo": 2,
         "trackNo": "Second",
-        "attending": false
+        "attending": true
     },
     {
         "name": "Talk6",

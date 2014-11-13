@@ -34,7 +34,7 @@ angular
             })
             .when('/myschedule', {
                 templateUrl: 'views/myschedule.html',
-                controller: 'MyScdeduleControllor'
+                controller: 'MyScheduleController'
             })
             .otherwise({
                 redirectTo: '/'
