@@ -6,7 +6,8 @@
         "nickname": "tk1",
         "slotNo": 4,
         "trackNo": "Third",
-        "attending": false
+        "attending": "false",
+        "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk2",
@@ -15,7 +16,8 @@
         "nickname": "tk1",
         "slotNo": 1,
         "trackNo": "Second",
-        "attending": true
+        "attending": true,
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk3",
@@ -24,7 +26,8 @@
         "nickname": "tk1",
         "slotNo": 3,
         "trackNo": "First",
-        "attending": false
+        "attending": "false",
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk4",
@@ -33,7 +36,8 @@
         "nickname": "tk1",
         "slotNo": 2,
         "trackNo": "First",
-        "attending": false
+        "attending": "false",
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk5",
@@ -42,16 +46,18 @@
         "nickname": "tk1",
         "slotNo": 2,
         "trackNo": "Second",
-        "attending": true
+        "attending": true,
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk6",
         "length": "30min",
-        "speaker": "twerker6",
+        "speaker": "twerker6 twerker9",
         "nickname": "tk1",
         "slotNo": 2,
         "trackNo": "Third",
-        "attending": false
+        "attending": "false",
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     },
     {
         "name": "Talk7",
@@ -60,6 +66,7 @@
         "nickname": "tk1",
         "slotNo": 1,
         "trackNo": "First",
-        "attending": false
+        "attending": "false",
+      "text" : "The progress of becoming a journyman to programmer does not happen in a day but it requires practise"
     }
 ]
