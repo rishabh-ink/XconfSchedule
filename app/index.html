@@ -29,7 +29,6 @@
             <md-content class="md-padding full">
                 <p hide show-md>
                     <div class="right-sidebar">
-                        Search your favourite talks:
                         <div class="row" md-theme="teal">
                             <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
                         </div>
@@ -48,7 +47,9 @@
 
         <div id="page">
             <div id="toolbar">
-                <button class="hamburger" ng-click="toggleLeft()"></button>
+                <md-button noink class="md-primary menu" ng-click="toggleLeft()" aria-label="menuicon">
+                    <md-icon icon="./images/hamburger.svg" style="width: 24px; height: 24px; padding: 0;"></md-icon>
+                </md-button>
                 <div id="title">
                     Xconf2014 Bangalore
                 </div>
