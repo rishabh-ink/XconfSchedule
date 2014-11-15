@@ -1,5 +1,5 @@
 <div class="style">
-    <div class="fabs">
+    <div class="action">
         <md-button ng-href="#/myschedule" class="md-fab md-primary" md-theme="indigo" aria-label="Profile">
             <md-icon icon="images/grid.svg"></md-icon>
         </md-button>
@@ -13,10 +13,10 @@
                             <a class="talk_title" href="#/details/{{talks.indexOf(item)}}">
                                 <p>{{item.name}}</p>
                             </a>
-    <div layout="horizontal">
-                          <p>{{item.speaker}}</p>
-                            <p class="track_details">{{item.trackNo}} Track</p>
-    </div>
+                            <div layout="horizontal">
+                                <p>{{item.speaker}}</p>
+                                <p class="track_details">{{item.trackNo}} Track</p>
+                            </div>
                             <p class="text">{{ item.text|limitTo:60}}...</p>
                         </div>
                     </md-item-content>

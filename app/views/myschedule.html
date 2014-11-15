@@ -4,20 +4,17 @@
             <md-list>
                 <md-item ng-repeat="item in mySchedule | filter: isInMySchedule | orderBy: predicate">
                     <md-item-content>
-                        <div class="md-tile-content">
-                            <a href="#/details/{{talks.indexOf(item)}}">
-                                <h2>{{item.name}}</h2>
+                        <div class="md-tile-content talk_info">
+                            <a class="talk_title" href="#/details/{{talks.indexOf(item)}}">
+                                <p>{{item.name}}</p>
                             </a>
-
-                            <h3>Speaker: {{item.speaker}}</h3>
-                            <h4>Track Number: {{item.trackNo}}</h4>
-
-                            <p>
-                                The journey from being a coder to programmer
-                            </p>
+                            <div layout="horizontal">
+                                <p>{{item.speaker}}</p>
+                                <p class="track_details">{{item.trackNo}} Track</p>
+                            </div>
+                            <p class="text">{{ item.text|limitTo:60}}...</p>
                         </div>
                     </md-item-content>
-
                     <md-divider ng-if="!$last"></md-divider>
                 </md-item>
             </md-list>
