@@ -2,8 +2,8 @@
     <div ng-controller="MyScheduleController" class="schedule">
         <md-content>
             <md-list>
-                <md-item ng-repeat="item in mySchedule | filter: isInMySchedule | orderBy: predicate">
-                    <md-item-content>
+                <md-item ng-repeat="item in mySchedule | orderBy: predicate">
+                    <md-item-content ng-show="item.attending">
                         <div class="md-tile-content talk_info">
                             <a class="talk_title" href="#/details/{{talks.indexOf(item)}}">
                                 <p>{{item.name}}</p>
@@ -14,6 +14,9 @@
                             </div>
                             <p class="text">{{ item.text|limitTo:60}}...</p>
                         </div>
+                        <md-button class="md-fab md-primary" ng-click="toggleSchedule(item)" md-theme=" indigo" aria-label="rem">
+                            <md-icon icon="images/cross.svg"></md-icon>
+                        </md-button>
                     </md-item-content>
                     <md-divider ng-if="!$last"></md-divider>
                 </md-item>

@@ -18,9 +18,9 @@
                                 <p class="track_details">{{item.trackNo}} Track</p>
                             </div>
                             <p class="text">{{ item.text|limitTo:60}}...</p>
-                            <button class="add" ng-click="toggleSchedule(item)">Button</button>
-                            <md-button class="md-fab md-primary" md-theme="indigo" aria-label="add">
-                                <md-icon icon="images/arrow_right.svg"></md-icon>
+                            <md-button class="md-fab md-primary" ng-click="toggleSchedule(item)" md-theme=" indigo" aria-label="add">
+                                <md-icon icon="images/plus_sign.svg" ng-show="!item.attending"></md-icon>
+                                <md-icon icon="images/done.svg" ng-show="item.attending"></md-icon>
                             </md-button>
                         </div>
                     </md-item-content>

@@ -10,7 +10,7 @@
 angular.module('xconfScheduleApp')
     .controller('MyScheduleController', ['$scope', '$http',
     function ($scope, $http) {
-
+            $scope.predicate = 'slotNo';
             var data;
             if (typeof (Storage) !== 'undefined') {
                 data = localStorage.getObject('talksxconf');
@@ -21,4 +21,9 @@ angular.module('xconfScheduleApp')
                 return talk.attending;
             }
 
+            $scope.toggleSchedule = function (talk) {
+                var index = $scope.mySchedule.indexOf(talk);
+                $scope.mySchedule[index].attending = !$scope.mySchedule[index].attending;
+                localStorage.setObject('talksxconf', $scope.mySchedule);
+            };
     }]);

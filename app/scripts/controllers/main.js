@@ -38,7 +38,6 @@ angular.module('xconfScheduleApp')
             $scope.toggleSchedule = function (talk) {
                 var index = $scope.talks.indexOf(talk);
                 $scope.talks[index].attending = !$scope.talks[index].attending;
-                console.log($scope.talks[index]);
                 localStorage.setObject('talksxconf', $scope.talks);
             };
     }]);
