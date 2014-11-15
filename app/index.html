@@ -46,14 +46,14 @@
             </md-content>
         </md-sidenav>
 
-        <div id="page" id="skrollr-body">
-            <div id="toolbar" data-0="height:192px" data-128="height: 64px">
-                <img src="images/hamburger.svg" class="hamburger" ng-click="toggleLeft()">
-                <div id="title" data-0="font-size: 48px; padding: 0 0 24px 12px;" data-128="font-size: 18px; padding: 0 0 21px 60px;">
+        <div id="page">
+            <div id="toolbar">
+                <img ng-src="images/hamburger.svg" class="hamburger" ng-click="toggleLeft()">
+                <div id="title">
                     Xconf2014 Bangalore
                 </div>
             </div>
-            <div id="content" data-0="padding-top: 192px;" data-192="padding-top: 190px;">
+            <div class="content">
                 <div ng-view=""></div>
             </div>
         </div>
