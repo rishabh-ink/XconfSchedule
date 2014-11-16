@@ -29,6 +29,15 @@
             <md-content class="md-padding full">
                 <p hide show-md>
                     <div class="right-sidebar">
+                        <img src="./images/banner.png" alt="logo" class="banner">
+                        <md-button class="navbutton" ng-href="#/" aria-label="explore">
+                            <md-icon icon="./images/compass.svg" class="navicon"></md-icon>Explore
+                        </md-button>
+                        <md-button class="navbutton" ng-href="#/myschedule" aria-label="mysch">
+                            <md-icon icon="./images/clock.svg" class="navicon"></md-icon>
+                            My Schedule
+                        </md-button>
+                        <md-divider></md-divider>
                         <div class="row" md-theme="teal">
                             <md-text-float label="Search Talk, Speaker, or Track" ng-model="query"></md-text-float>
                         </div>

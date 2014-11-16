@@ -2,7 +2,7 @@
     <div ng-controller="MyScheduleController" class="schedule">
         <md-content>
             <md-list>
-                <md-item ng-repeat="item in mySchedule | orderBy: predicate">
+                <md-item ng-repeat="item in mySchedule | filter: track | filter: query | orderBy: predicate">
                     <md-item-content ng-show="item.attending">
                         <div class="md-tile-content talk_info">
                             <a class="talk_title" href="#/details/{{talks.indexOf(item)}}">

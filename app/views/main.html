@@ -1,9 +1,4 @@
 <div class="style">
-    <div class="action">
-        <md-button ng-href="#/myschedule" class="md-fab md-primary" md-theme="indigo" aria-label="Profile">
-            <md-icon icon="images/grid.svg"></md-icon>
-        </md-button>
-    </div>
     <div class="schedule" ng-controller="MainController">
         <md-content>
             <md-list>
@@ -18,7 +13,7 @@
                                 <p class="track_details">{{item.trackNo}} Track</p>
                             </div>
                             <p class="text">{{ item.text|limitTo:60}}...</p>
-                            <md-button class="md-fab md-primary" ng-click="toggleSchedule(item)" md-theme=" indigo" aria-label="add">
+                            <md-button class="md-fab md-primary slct" ng-click="toggleSchedule(item)" md-theme=" indigo" aria-label="add">
                                 <md-icon icon="images/plus_sign.svg" ng-show="!item.attending"></md-icon>
                                 <md-icon icon="images/done.svg" ng-show="item.attending"></md-icon>
                             </md-button>

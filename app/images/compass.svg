@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" height="16px" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 16 16" width="16px" xml:space="preserve" id="svg2" inkscape:version="0.48.4 r9939" sodipodi:docname="1416113978_compass.svg">
+    <metadata id="metadata20">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs18" />
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="702" id="namedview16" showgrid="false" inkscape:zoom="7.375" inkscape:cx="16" inkscape:cy="16" inkscape:window-x="-4" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="svg2" />
+    <g id="Layer_1" />
+    <g id="compass" transform="scale(0.5,0.5)">
+        <g id="g6">
+            <path d="M 16,4 C 22.617,4 28,9.383 28,16 28,22.617 22.617,28 16,28 9.383,28 4,22.617 4,16 4,9.383 9.383,4 16,4 M 16,0 C 7.164,0 0,7.164 0,16 0,24.836 7.164,32 16,32 24.836,32 32,24.836 32,16 32,7.164 24.836,0 16,0 l 0,0 z" style="fill:#4e4e50" id="path8" inkscape:connector-curvature="0" />
+            <g id="g10">
+                <path d="m 18.125,13.879 c 0.797,0.799 1.008,1.93 0.719,2.943 L 24,8 15.297,13.139 c 0.984,-0.243 2.058,-0.03 2.828,0.74 z" style="fill:#4e4e50" id="path12" inkscape:connector-curvature="0" />
+                <path d="M 13.883,18.121 C 13.11,17.35 12.899,16.271 13.141,15.285 L 8,24 16.832,18.84 c -1.016,0.293 -2.148,0.082 -2.949,-0.719 z" style="fill:#4e4e50" id="path14" inkscape:connector-curvature="0" />
+            </g>
+        </g>
+    </g>
+</svg>

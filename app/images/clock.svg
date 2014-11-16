@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" enable-background="new 0 0 16 16" height="16px" id="Livello_1" version="1.1" viewBox="0 0 16 16" width="16px" xml:space="preserve" inkscape:version="0.48.4 r9939" sodipodi:docname="clock.svg">
+    <metadata id="metadata11">
+        <rdf:RDF>
+            <cc:Work rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs id="defs9" />
+    <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1366" inkscape:window-height="702" id="namedview7" showgrid="false" inkscape:zoom="1.6651145" inkscape:cx="70.865997" inkscape:cy="75.263313" inkscape:window-x="-4" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="Livello_1" />
+    <g id="Livello_5" transform="matrix(0.11402996,0,0,0.11402996,0,0.59878008)">
+        <path d="m 113.326,70.191 c 0,-2.97 -2.377,-5.376 -5.307,-5.376 H 75.543 V 32.387 32.386 c 0,-2.98 -2.418,-5.397 -5.396,-5.397 -2.98,0 -5.398,2.417 -5.398,5.397 V 70.17 c 0,2.981 2.418,5.398 5.398,5.398 h 37.875 c 2.927,0 5.304,-2.407 5.304,-5.377 m 16.207,-0.034 c 0,32.798 -26.584,59.386 -59.375,59.386 -32.793,0 -59.375,-26.588 -59.375,-59.386 0,-32.798 26.582,-59.386 59.375,-59.386 32.791,0 59.375,26.588 59.375,59.386 m 10.781,0 C 140.314,31.41 108.904,0 70.158,0 31.41,0 0,31.41 0,70.157 c 0,38.747 31.41,70.157 70.158,70.157 38.746,0 70.156,-31.41 70.156,-70.157" id="path4" inkscape:connector-curvature="0" />
+    </g>
+    <g id="Livello_1_1_" />
+</svg>
